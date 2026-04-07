@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYUGA FASHION</title>
+    <!--Tailwind CSS cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Font Awosome Cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Responsive Pop-Up -->
+    <section>
+        <div id="closepopup" class="bg-gray-900 text-white p-2 font-bold flex justify-center items-center gap-28 ">
+            <h2 class="text-xs md:text-2xl">Sign Up and GET 20% OFF for your first Order </h2>
+            <p id="close" class="cursor-pointer text-xs md:text-2xl">X</p>
+        </div>
+    </section>
+    <!--Navbar-->
+    <nav class="bg-yellow-50 flex p-4 items-center   justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl text-black-300  font-sans font-bold"><i class="fa-solid fa-hat-wizard fa-xl"
+                style="color: rgb(59, 198, 255);"></i>Hyuga</h1>
+        <div class="flex gap-2 md:hidden relative">
+            <p>Menu</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
+            </svg>
+        </div>
+
+        <ul class=" flex gap-10 text-lg text-black-500 hidden mr-3 md:flex">
+            <li>
+                <a class="hover:underline  hover:text-gray-500" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline  hover:text-gray-500" href="#">Mens Clothing</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-gray-500" href="collection.html">Collection</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-gray-500" href="#">Trending</a>
+            </li>
+
+            <li>
+                <a class="hover:underline  hover:text-gray-500" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!--Offerimage-->
+    <div class="relative">
+        <img src="./image/offer.jpg" alt="offer" class="">
+    </div>
+
+    <!--searchbar-->
+    <div class="mt-2 gap-1  md:hidden ml-2 flex justify-center">
+        <input type="text" class=" border-2 w-150 p-0 hover:border-yellow-200 border-yellow-600/40 rounded-sm">
+        <button class="bg-black text-white hover:bg-yellow-200 hover:text-black p-2 rounded-sm">Search</button>
+    </div>
+
+    <!--Brands-->
+    <h1 class="text-3xl font-bold p-3">
+        Our Brands
+    </h1>
+    <ul class="flex flex-wrap gap-20">
+        <li>
+            <img src="./image/a1.png" alt=""
+                class="w-35 ml-10 transition ease-in-out cursor-pointer delay-150 hover:-translate-y-1 hover:scale-110">
+        </li>
+        <li>
+            <img src="./image/a2.png" alt=""
+                class="w-35 ml-10 transition ease-in-out cursor-pointer delay-150 hover:-translate-y-1 hover:scale-110">
+        </li>
+        <li>
+            <img src="./image/a3.jpg" alt=""
+                class="w-35 ml-10 transition ease-in-out cursor-pointer delay-150 hover:-translate-y-1 hover:scale-110">
+        </li>
+        <li>
+            <img src="./image/a4.jpg" alt=""
+                class="w-35 ml-10 transition ease-in-out  cursor-pointer delay-150 hover:-translate-y-1 hover:scale-110">
+        </li>
+        <li>
+            <img src="./image/a5.png" alt=""
+                class="w-35 ml-10 transition ease-in-out cursor-pointer delay-150 hover:-translate-y-1 hover:scale-110">
+        </li>
+
+        <li>
+            <img src="./image/a7.png" alt=""
+                class="w-35 ml-10 transition ease-in-out cursor-pointer delay-150 hover:-translate-y-1 hover:scale-110">
+        </li>
+    </ul>
+    <!--Items-->
+    <h1 class="text-3xl  flex-wrap font-bold p-5">Latest Collection</h1>
+    <ul class="grid grid-cols-2 md:grid-cols-4 p-7 cursor-pointer mt-1 gap-7 flex-wrap ">
+        <li>
+            <img src="./image/i1.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike ACG 'Lava Loft'</p>
+            <p class="text-center text-zinc-400">Men's Therma-FIT Jacket</p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-sky-300 rounded-full"></div>
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 animate-pulse  mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        
+        <li>
+            <img src="./image/i2.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike 'Sportswear Club'</p>
+            <p class="text-center text-zinc-400">Men's Dri-FIT ADV 13cm </p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-yellow-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-sky-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 mx-auto block  animate-pulse  mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        <li>
+            <img src="./image/i3.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike ACG' Sunrise'</p>
+            <p class="text-center text-zinc-400">AS M NK DF ENERGY TOP </p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-violet-400 rounded-full"></div>
+                <div class="w-6 h-6 bg-pink-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-orange-200 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 animate-pulse mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        <li>
+            <img src="./image/i4.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike ACG 'Lava Loft'</p>
+            <p class="text-center text-zinc-400">Men's Basketball T-Shirt</p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-purple-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-lime-200 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 animate-pulse mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        <li>
+            <img src="./image/i5.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike ACG 'Lava Loft'</p>
+            <p class="text-center text-zinc-400">Men's Therma-FIT Jacket</p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-sky-300 rounded-full"></div>
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 animate-pulse mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        <li>
+            <img src="./image/i6.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike 'Sportswear Club'</p>
+            <p class="text-center text-zinc-400">Men's Dri-FIT ADV 13cm </p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-yellow-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-sky-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300   animate-pulse mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        <li>
+            <img src="./image/i7.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike ACG ' Sunrise'</p>
+            <p class="text-center text-zinc-400">AS M NK DF ENERGY TOP </p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-violet-400 rounded-full"></div>
+                <div class="w-6 h-6 bg-pink-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-orange-200 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 animate-pulse mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+        <li>
+            <img src="./image/i8.avif" alt=""
+                class="w-80 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <p class="text-center font-medium text-lg mt-2">Nike ACG 'Lava Loft'</p>
+            <p class="text-center text-zinc-400">Men's Basketball T-Shirt</p>
+            <div class="flex gap-3 mt-2 justify-center">
+                <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-purple-500 rounded-full"></div>
+                <div class="w-6 h-6 bg-lime-200 rounded-full"></div>
+            </div>
+            <p class="text-center">₹12,796 <del>₹15,995</del></p>
+            <button
+                class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 animate-pulse mx-auto block mt-3 bg-slate-600 text-white rounded-md p-2">Order
+                Now</button>
+        </li>
+    </ul>
+
+    <!--Nike offer-->
+    <div class="relative ml-10">
+        <img src="./image/nike offer2.jpg" alt="offer">
+        <img src="./image/nike offer3.jpg" alt="" class="w-80 h-123 absolute hidden md:flex right-10 top-8">
+        <p class="absolute text-3xl font-bold italic text-cyan-700 left-150 top-10"></p>
+    </div>
+    <!--Footer-->
+    <div class="bg-yellow-50 mt-10">
+        <h1 class="text-4xl text-black-300 ml-20 p-5 font-bold"><i class="fa-solid fa-hat-wizard fa-xl"
+                style="color: rgb(59, 198, 255);"></i>Hyuga</h1>
+
+
+        <footer class="bg-neutral-primary">
+            <div class="mx-auto w-full max-w-screen-xl">
+                <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+                    <div>
+                        <h2 class="mb-6 text-2xl font-bold text-heading uppercase">Company</h2>
+                        <ul class="text-body font-semibold text-1xl">
+                            <li class="mb-4">
+                                <a href="#" class=" hover:underline">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Careers</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Brand Center</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-2xl font-semibold text-heading uppercase">Help center</h2>
+                        <ul class="text-body font-semibold">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Discord Server</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Twitter</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Facebook</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-2xl font-semibold text-heading uppercase">Legal</h2>
+                        <ul class="text-body font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Licensing</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-2xl font-semibold text-heading uppercase">Download</h2>
+                        <ul class="text-body font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">iOS</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Android</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Windows</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">MacOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-4 py-6 bg-neutral-secondary-soft md:flex md:items-center md:justify-between">
+                    <span class="text-sm text-body sm:text-center">© 2023 <a href="https://flowbite.com/">HYUGA™</a>.
+                        All Rights Reserved.
+                    </span>
+                    <div class="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse">
+                        <a href="#" class="text-body hover:text-heading">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                            </svg>
+                            <span class="sr-only">Discord community</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
+                            </svg>
+                            <span class="sr-only">Twitter page</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">GitHub account</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2a10 10 0 1 0 10 10A10.009 10.009 0 0 0 12 2Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.093 20.093 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM10 3.707a8.82 8.82 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.755 45.755 0 0 0 10 3.707Zm-6.358 6.555a8.57 8.57 0 0 1 4.73-5.981 53.99 53.99 0 0 1 3.168 4.941 32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.641 31.641 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM12 20.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 15.113 13a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Dribbble account</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Link Javascript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
